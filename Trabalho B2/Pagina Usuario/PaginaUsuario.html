@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+   <link rel="stylesheet" href="PaginaUsuario.css">
+   <link rel="shortcut icon" href="icone.png" type="image/x-icon">
+</head>
+<body>
+    <br>
+
+    <div class="background"></div> <!-- Imagem de fundo -->
+    <div class="form-container">
+        <h1>Formulário</h1>
+        <form action="" onsubmit="return mostrarMensagem();">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="matricula">Matrícula:</label>
+                <input type="text" id="matricula" name="matricula" placeholder="Digite sua matrícula" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso" required>
+                    <option value="">Selecione seu curso</option>
+                    <option value="computacao">Ciência da Computação</option>
+                    <option value="engenharia">Engenharia</option>
+                    <option value="adm">Administração</option>
+                    <option value="info">Infórmatica</option>
+                    <option value="eletro">Eletrotecnica</option>
+                    <option value="fs">Fisica</option>
+                    <option value="mat">Matématica</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="opiniao">Opinião:</label>
+                <textarea id="opiniao" name="opiniao" rows="4" placeholder="Deixe sua opinião" required></textarea>
+            </div>
+            <div class="form-group">
+                <button  type="submit">Enviar</button>
+            </div>
+        </form>
+
+    </div>
+
+    <script>
+        // Função para mostrar a mensagem de sucesso
+        function mostrarMensagem() {
+            alert("Você está logado");
+            window.location.href = "../Página Inicial/PaginaInicial.html";
+            return false; 
+        }
+    </script>
+</body>
+</html>
+

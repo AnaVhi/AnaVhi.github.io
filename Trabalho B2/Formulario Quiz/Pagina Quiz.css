@@ -1,0 +1,96 @@
+/* Importa a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilo para o corpo da página */
+h1 {
+    font-size: 45px; /* Ajusta o tamanho do título */
+    color: #1db954; /* Cor verde para o título */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-weight: bold;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("NossoFundo.jpg") no-repeat center center fixed; /* Imagem de fundo com gradiente */
+    background-size: cover; /* Cobre toda a área */
+    width: 100%;
+    height: 100vh; /* 100% da altura da tela */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 2cm; /* Espaçamento interno */
+    flex-direction: column; /* Adiciona a direção vertical para empilhar o título e o formulário */
+}
+
+/* Estilo para o formulário */
+form {
+    background-color: transparent; /* Fundo transparente */
+    border: transparent; /* Bordas finas de cor verde */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    width: 400px; /* Largura do formulário */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+
+/* Estilo para os rótulos */
+label {
+    font-size: 16px; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+    display: block; /* Para as labels ocuparem toda a linha */
+    margin-bottom: 5px; /* Espaço abaixo da label */
+    font-weight: bold;
+}
+
+/* Estilo para os campos de entrada */
+input[type="text"], input[type="email"], input[type="date"], textarea {
+    width: 100%; /* Largura total dos campos */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaço entre os campos */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 14px; /* Tamanho da fonte */
+    outline: none; /* Remove o contorno de foco */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo levemente transparente */
+    color: black; /* Cor do texto */
+}
+
+/* Estilo específico para textarea */
+textarea {
+    resize: vertical; /* Permite redimensionamento vertical */
+}
+
+/* Estilo para o botão */
+input[type="submit"] {
+    width: 100%; /* Largura total do botão */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #1db954; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Cursor em forma de ponteiro */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Efeito de hover para o botão */
+input[type="submit"]:hover {
+    background-color: #159f44; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o texto placeholder */
+input::placeholder, textarea::placeholder {
+    color: #777; /* Cor do texto de placeholder */
+    font-style: italic; /* Estilo itálico */
+}

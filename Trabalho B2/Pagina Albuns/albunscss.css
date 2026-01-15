@@ -1,0 +1,70 @@
+
+/* Importa a fonte "Poppins" do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Configurações globais para todos os elementos */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Facilita o controle de tamanhos */
+    text-decoration: none; /* Remove sublinhados de links */
+    list-style: none; /* Remove marcadores de listas */
+    font-family: "Poppins", sans-serif; /* Aplica a fonte "Poppins" */
+}
+
+/* Configurações do corpo da página */
+body {
+    background-image: url('nossofundo.jpg'); /* Define uma imagem de fundo */
+    background-size: cover; /* Cobre toda a área */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede repetição da imagem */
+    background-color: lightgrey; /* Cor de fundo alternativa */
+    background-attachment: fixed; /* Imagem fixa durante o scroll */
+    padding: 2cm; /* Adiciona espaçamento interno */
+}
+
+/* Estilização do título (h1) */
+h1 {
+    text-align: center; /* Centraliza o texto */
+    color: #1db954; /* Cor verde para o texto */
+    font-weight: bold; /* Torna o texto em negrito */
+    font-size: 50px; /* Define tamanho da fonte */
+}
+
+/* Estilização das imagens */
+.imagens img {
+    width: 90px; /* Define largura das imagens */
+    height: auto; /* Mantém proporção original */
+}
+
+/* Configurações da tabela */
+table {
+    font-weight: bold; /* Torna o texto da tabela em negrito */
+    margin: 0 auto; /* Centraliza a tabela */
+}
+
+/* Estilização das células da tabela (td e th) */
+td, th {
+    text-align: center; /* Centraliza o texto nas células */
+    color: white; /* Cor do texto das células */
+    font-size: 20px; /* Tamanho da fonte nas células */
+}
+
+/* Estilização dos botões (links das playlists) */
+.botao {
+    display: inline-block; /* Permite margens e padding */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    background-color: #1db954; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    text-align: center; /* Centraliza o texto do botão */
+    text-decoration: none; /* Remove sublinhados dos links */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    font-size: 16px; /* Define tamanho da fonte do botão */
+    font-weight: bold; /* Torna o texto do botão em negrito */
+}
+
+/* Efeito hover para os botões */
+.botao:hover {
+    background-color: white; /* Muda a cor de fundo para branco */
+    color: #1db954; /* Muda a cor do texto para verde */
+}

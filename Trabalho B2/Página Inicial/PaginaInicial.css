@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Importa a fonte Poppins do Google Fonts */
+
+*{
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimento no tamanho total do elemento */
+    text-decoration: none; /* Remove sublinhado dos links - o nine*/
+    list-style: none; /* Remove marcadores de listas - o nine */
+    font-family: "Poppins", sans-serif; /* Define a fonte Poppins como padrão */
+}
+
+/* Define o estilo que eu quero para todos os elementos */
+
+body{
+    overflow: hidden; /* Remove barras de rolagem para ficar só a pagina inicial mesmo - sem necessidade de haver rolagem*/
+}
+
+.background{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)); /* fundo mais escuro para melhorar o contraste da pagina e ficar bem visivel os elementos*/
+    background-image: url(nossofundo.jpg); /* Imagem de fundo */
+    background-size: cover; /* Cobre toda a área do elemento */
+    background-position: center; /* Centraliza a imagem de fundo para cobrir toda a nossa pagina*/
+    width: 100%; /* Largura total da foto */
+    height: 100vh; /* Altura total da viewport */
+    position: relative;
+}
+
+/* Estilos para o cabeçalho da página */    
+header{
+    display: flex; /* Utiliza flexbox para layout */
+    justify-content: space-around; /* Espaça os itens de forma uniforme */
+    max-width: 100%; /* Largura máxima do cabeçalho */
+    align-items: center; /* Alinha itens verticalmente no centro */
+    text-align: center; /* Centraliza o texto */
+    padding-top: 1rem; /* Espaçamento superior */
+}
+/* Estilo para o estado de hover dos links no cabeçalho */
+
+.cabeçalho-link a :hover{
+    color: #1db954; /* Muda a cor do texto ao passar o mouse */
+    transition: 0.3s all; /* Adiciona uma transição suave */
+}
+
+.cabeçalho-link{
+    display: flex; /*flexbox*/
+    gap: 3rem; /* Espaçamento entre os links */
+    font-weight: 300; /* Define o peso da fonte */
+}
+
+.cabeçalho-link a{
+    color: white; /* Cor do texto do link */
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+
+
+
+/* Estilos para o ícone do logo */
+
+.logo i{
+height: 75px; /* Altura do ícone */
+width: 75px; /* Largura do ícone */
+background: transparent; /* Fundo transparente */
+border: 5px solid #1db954; /* Borda branca ao redor do ícone */
+color: #ffffff; /* Cor do ícone */
+border-radius: 50%; /* Borda arredondada para criar um círculo */
+display: inline-flex; /* Utiliza flexbox para alinhar o conteúdo */
+align-items: center; /* Alinha itens verticalmente no centro */
+justify-content: center; /* Alinha itens horizontalmente no centro */
+font-size: 25px; /* Tamanho da fonte */
+
+}
+
+/* Estilos para a classe 'playlist' */
+
+.playlist{
+    color: #1db954; /* Cor do texto */
+    background: transparent; /* Fundo transparente */
+    border: solid 3px #1db954; /* Borda verde para ficar tipo o spotify ao redor */ 
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    font-size: 10px; /* Tamanho da fonte */
+    width: 150px; /* Largura do elemento */
+    transition: 0.5s; /* Transição suave para alterações */
+}
+
+/* Estilos para os links dentro da classe 'playlist' */
+
+.playlist>a{
+    font-size: 14px; /* Tamanho da fonte dos links */
+}
+
+/* Estilo para o estado de hover da classe 'playlist' */
+
+.playlist:hover{
+    transition: 0.3s; /* Transição suave para o hover */
+    background:#1db954; /* Fundo verde */
+    color: #ffffff; /* Cor do texto branca */
+}
+
+/* Estilo para o botão 'meubt' */
+
+.meubt:hover{
+    background-color: #1db954; /* Fundo verde ao passar o mouse */
+    color: white; /* Cor do texto branca */
+    transition: 0.5s; /* Transição suave para o hover */
+} 
+
+
+
+.container-text{
+    padding: 150px 0 0 130px; /* Espaçamento interno (superior, direita, inferior, esquerda) */
+}
+
+/* Estilos para os títulos dentro da classe 'text' */
+.text h3{
+    color: #ffffff;  /* Cor do texto */
+    font-size: 17px; /* Tamanho da fonte */
+}
+
+/* Estilos para os títulos principais dentro da classe 'text' */
+.text h1{
+    color: #ffffff;/* Cor do texto */
+    margin-top: 15px; /* Espaçamento superior */
+}
+
+/* Estilos para spans dentro da classe 'text' */
+.text span{
+    color: #1db954; /* Cor do texto verde */
+}
+
+/* Estilos para os parágrafos dentro da classe 'text' */
+.text p{
+    color: #ffffff; /* Cor do texto */
+    font-size: 17px; /* Tamanho da fonte */
+    font-weight: 300; /* Peso da fonte */
+}
+
+/* Estilos para os links dentro da classe 'redes-sociais' */
+.redes-sociais a{
+    color: #1db954; /* Cor do texto dos links */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 5px; /* Espaçamento superior */
+    font-size: 20px; /* Tamanho da fonte */
+}
+
+/* Estilos para o botão 'meubt' */
+.meubt{
+    margin-top: 10px; /* Espaçamento superior */
+    color: #1db954; /* Cor do texto verde */
+    background: transparent; /* Fundo transparente */
+    border: solid 3px #1db954; /* Borda verde ao redor */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 25px; /* Bordas arredondadas */
+    font-size: 20px; /* Tamanho da fonte */
+    width: 150px; /* Largura do botão */
+    transition: 0.5s; /* Transição suave para alterações */
+}
+
+/* Estilos para os links dentro da classe 'meubt' */
+.meubt>a{
+    color: #ffffff; /* Cor do texto dos links dentro do botão */
+}

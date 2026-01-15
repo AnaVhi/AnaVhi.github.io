@@ -1,0 +1,62 @@
+/*importa a fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0; /* Remove margens padrão */
+    padding: 0;/* Remove preenchimento padrão */
+    box-sizing: border-box;/* Inclui bordas e preenchimento no tamanho total do elemento */
+    text-decoration: none;/* Remove sublinhado dos links - o nine*/
+    list-style: none;/* Remove marcadores de listas - o nine */
+    font-family: "Poppins", sans-serif;/* Define a fonte Poppins como padrão */
+}
+
+/* ajus*/
+body{
+    background-image: url('nossofundo.jpg'); /* Define uma imagem de fundo */
+    background-size: cover; /* Cobre toda a área */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede repetição da imagem */
+    background-color: lightgrey; /* Cor de fundo alternativa */
+    background-attachment: fixed; /* Imagem fixa durante o scroll */
+    padding: 2cm; /* Adiciona espaçamento interno */
+}
+a{
+    color: white;/*Define a cor do texto dos links como branca*/
+}
+
+img{
+    width: 200px;/*Define a largura da imagem como 200 pixels*/
+    height: 200px;/*Define a altura da imagem como 200 pixels*/
+    border-radius: 50%; /*Torna a imagem circular, aplicando um raio de borda de 50%*/
+    border: 5px solid #1db954; /*Adiciona uma borda sólida de 5 pixels na cor verde*/
+}
+
+.centro{
+    text-align: center;/*Aplica centralização de texto a qualquer elemento com a classe centro*/
+}
+
+h1{
+    color: #1db954; /*Define a cor do texto como verde*/
+    text-align: center;/*Centraliza o texto*/
+    font-size: 40px;/*Define o tamanho da fonte como 40 pixels*/
+}
+
+h2{
+    text-align: center;/*Centraliza o texto*/
+    color: white;/*Define a cor do texto como branca*/
+}
+
+h3{
+    color: #1db954;/*Define a cor do texto como verde*/
+    font-size: 28px;/*Define o tamanho da fonte como 28 pixels*/
+}
+
+.historia{
+    text-indent: 30px;/*Adiciona um recuo de 30 pixels na primeira linha do texto*/
+    color: white;/*Define a cor do texto como branca*/
+    font-size: 18px;/*Define a cor do texto como branca*/
+}
+
+.curiosidades{
+    font-size: 16px;/*Define o tamanho da fonte como 16 pixels*/
+    color: white;/*Define a cor do texto como branca*/
+}
